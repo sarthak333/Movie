@@ -1,12 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import "./details.css";
 
-export default class Details extends Component{
-
-  render(){
+function Details(props){
     let display;
-    let full=this.props.data;
-    let query=this.props.query;
+    let full=props.data;
+    let query=props.query;
     let sol= full[query];
     if(query==="Poster")
     {
@@ -31,4 +29,4 @@ export default class Details extends Component{
       </div>
     );
   }
-}
+  export default Details;
