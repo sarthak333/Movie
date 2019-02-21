@@ -1,0 +1,19 @@
+.datalist{
+  text-align: center;
+  width: 50%;
+  float:left;
+  background-color: #000;
+  min-height: 100vh;
+  height: auto;
+  color:#fff;
+  padding-top: 5%;
+  text-decoration: none;
+
+}
+h4{
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in;
+}
+h4:hover{
+  color: yellow;
+}

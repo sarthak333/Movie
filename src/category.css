@@ -1,0 +1,10 @@
+.category{
+  color:#fff !important;
+  margin-left:30px;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+
+}
+.category:hover{
+  color:yellow !important;
+}
