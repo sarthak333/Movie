@@ -25,7 +25,7 @@ export default class Details extends Component{
 
     return(
       <div className="details">
-      <div class="perfectCenter">
+      <div className="perfectCenter">
       <h1>{display}</h1>
       </div>
       </div>

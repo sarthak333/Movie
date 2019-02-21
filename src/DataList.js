@@ -15,7 +15,7 @@ render(){
   let i;
   let str= Object.values(this.props.data)
   return(
-    <div class="datalist">
+    <div className="datalist">
 
     {str.map(x=> <h4 onClick={() =>this.handleClick(x)}>{x}</h4> )}
 
