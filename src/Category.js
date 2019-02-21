@@ -9,7 +9,7 @@ export default class Category extends Component{
   }
 
   handleClick(){
-    let url= "http://www.omdbapi.com/?t="+this.props.name+"&apikey=791bf3d9";
+    let url= "https://www.omdbapi.com/?t="+this.props.name+"&apikey=791bf3d9";
     fetch(url)
     .then(response => response.json())
      .then(data => {
