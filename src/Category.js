@@ -1,6 +1,6 @@
 import React from 'react';
 import "./category.css";
-const axios = require('axios');
+import axios from 'axios';
 
 function Category(props)
 {

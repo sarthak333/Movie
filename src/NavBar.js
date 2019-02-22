@@ -1,6 +1,8 @@
 import React from 'react';
 import Category from './Category.js';
 import './NavBar.css';
+import PropTypes from 'prop-types';
+
 let cats=[];
 function NavBar(props){
     let i;
@@ -15,3 +17,8 @@ function NavBar(props){
     );
   }
 export default NavBar;
+
+NavBar.propTypes=
+  {
+    display: PropTypes.func
+  };

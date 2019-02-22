@@ -1,7 +1,9 @@
 import React from 'react';
 import "./datalist.css";
+import PropTypes from 'prop-types';
 
 function DataList(props) {
+  
   let str= Object.values(props.data)
   return(
     <div className="datalist">
@@ -12,3 +14,9 @@ function DataList(props) {
   );
 }
 export default DataList;
+
+
+DataList.propTypes=
+  {
+    update: PropTypes.func
+  };

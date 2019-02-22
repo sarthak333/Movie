@@ -1,7 +1,7 @@
 import React from 'react';
 import './datalist.css';
-const axios = require('axios');
-
+import axios from 'axios';
+import PropTypes from 'prop-types';
 function handleClick(text, props){
     let url= "https://www.omdbapi.com/?t="+text+"&apikey=791bf3d9";
     let data1;
@@ -38,3 +38,8 @@ function MList(props){
     }
 
 export default MList;
+
+MList.propTypes=
+  {
+    changes: PropTypes.func
+  };

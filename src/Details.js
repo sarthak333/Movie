@@ -1,5 +1,6 @@
 import React from 'react';
 import "./details.css";
+import PropTypes from 'prop-types';
 
 function Details(props){
     let display;
@@ -30,3 +31,8 @@ function Details(props){
     );
   }
   export default Details;
+
+  Details.propTypes=
+  {
+    query: PropTypes.string
+  };
