@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './movie.css';
+import {Link} from 'react-router-dom';
 import Dets from './Dets.js';
 import MList from './MList.js';
 
@@ -28,6 +29,7 @@ class MovieList extends Component{
     <>
     <MList changes={this.changeState}/>
      {det}
+     <Link to="/" className="movies">Home</Link>
          </>
     );
     }
