@@ -2,7 +2,6 @@ import React from 'react';
 import "./datalist.css";
 
 function DataList(props) {
-  let i;
   let str= Object.values(props.data)
   return(
     <div className="datalist">

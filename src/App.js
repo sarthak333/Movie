@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navbar from './NavBar.js';
+import {Link} from 'react-router-dom';
 import DataList from "./DataList.js";
 import Details from "./Details.js";
 
@@ -12,7 +13,6 @@ class App extends Component {
             full: null,
             query: null
         }
-        this.render = this.render.bind(this);
     }
 
     showList = (data) => {
@@ -28,8 +28,8 @@ class App extends Component {
             query: value
         })
     }
-
-    render = () => {
+      render = () => {
+      
         let list = null;
         let detail = null;
         if (this.state.list != null) {
@@ -42,11 +42,13 @@ class App extends Component {
             data = { this.state.full }
             />;
         }
-        return ( <
-            div >
-            <
-            Navbar display = { this.showList }
-            />  { list } { detail } </div >
+        return ( 
+        <>
+            <Navbar display = { this.showList }/>
+            { list }
+            { detail }
+            <Link to="/movies" className="movies">Movies</Link>
+        </>
         );
     }
 }

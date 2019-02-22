@@ -1,0 +1,14 @@
+.dets{
+    float:right !important;
+    position: fixed;
+    right: 0;
+    width:50%;
+    height:100vh;
+}
+.poster{
+    text-align: center;
+    padding: 5%;
+}
+.info{
+    padding: 5%;
+}

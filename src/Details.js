@@ -8,7 +8,7 @@ function Details(props){
     let sol= full[query];
     if(query==="Poster")
     {
-      display=<img src={sol} />;
+      display=<img src={sol} alt="Poster Seems to be torn!!!!!"/>;
     }
     else
     if(query==="Ratings")

@@ -31,3 +31,24 @@
     transform: rotate(360deg);
   }
 }
+.movies{
+  height:95px;
+  font-weight: bolder;
+  position:fixed;
+  width:95px;
+  background-color:#000;
+  border-radius: 100%;
+  z-index: 99;
+  right:30px;
+  bottom:30px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s ease-in-out;
+}
+.movies:hover{
+  color:lightseagreen;
+}
