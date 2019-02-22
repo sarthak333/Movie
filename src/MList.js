@@ -1,5 +1,6 @@
 import React from 'react';
 import './datalist.css';
+import { Route, Link} from 'react-router-dom'
 import axios from 'axios';
 import PropTypes from 'prop-types';
 function handleClick(text, props){
@@ -14,11 +15,12 @@ function handleClick(text, props){
     data1=response.data;
     props.changes(data1);
     });
- 
 }
 function MList(props){
     return(
+        
         <div className="datalist">
+       
        <h4 onClick={(e) => handleClick(e.target.textContent, props)}>The Godfather</h4>
        <h4 onClick={(e) => handleClick(e.target.textContent,props)}> The Dark Knight</h4>
        <h4 onClick={(e) => handleClick(e.target.textContent, props)}>The Godfather: Part II </h4>
@@ -33,7 +35,9 @@ function MList(props){
        <h4 onClick={(e) => handleClick(e.target.textContent, props)}>Saw</h4>
 
        <h4 onClick={(e) => handleClick(e.target.textContent,props)}>Star Wars</h4>
+       
        </div>
+        
     );
     }
 
