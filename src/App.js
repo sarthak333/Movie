@@ -47,7 +47,7 @@ class App extends Component {
             <Navbar display = { this.showList }/>
             { list }
             { detail }
-            <Link to="/movies" className="movies">Movies</Link>
+            <Link to="/movies/list" className="movies">Movies</Link>
         </>
         );
     }

@@ -16,6 +16,7 @@ class MovieList extends Component{
         this.setState({
             Ddata:data
         })
+    this.props.history.push(data.Title);
     }
 
     render=()=>{
