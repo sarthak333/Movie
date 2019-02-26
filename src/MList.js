@@ -1,6 +1,5 @@
 import React from 'react';
 import './datalist.css';
-import { Route, Link} from 'react-router-dom'
 import axios from 'axios';
 import PropTypes from 'prop-types';
 function handleClick(text, props){
