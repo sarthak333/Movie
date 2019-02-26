@@ -26,5 +26,6 @@ export default Category;
 
 Category.propTypes=
   {
-    name: PropTypes.string
+    name: PropTypes.string,
+    display: PropTypes.func
   };
