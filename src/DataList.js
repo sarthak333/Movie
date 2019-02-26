@@ -18,5 +18,6 @@ export default DataList;
 
 DataList.propTypes=
   {
-    update: PropTypes.func
+    update: PropTypes.func,
+    data: PropTypes.array
   };

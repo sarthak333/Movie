@@ -3,6 +3,7 @@ import './movie.css';
 import {Link} from 'react-router-dom';
 import Dets from './Dets.js';
 import MList from './MList.js';
+import PropTypes from 'prop-types';
 
 class MovieList extends Component{
     constructor(props) {
@@ -35,3 +36,7 @@ class MovieList extends Component{
     }
 }
 export default MovieList;
+
+MovieList.propTypes={
+    history: PropTypes.object
+};

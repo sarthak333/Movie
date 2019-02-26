@@ -34,5 +34,6 @@ function Details(props){
 
   Details.propTypes=
   {
+    data: PropTypes.object,
     query: PropTypes.string
   };

@@ -1,6 +1,7 @@
 import React from 'react';
 import "./category.css";
 import axios from 'axios';
+import PropTypes from 'prop-types';
 
 function Category(props)
 {
@@ -22,3 +23,8 @@ function Category(props)
     );
   }
 export default Category;
+
+Category.propTypes=
+  {
+    name: PropTypes.string
+  };
